@@ -1,0 +1,123 @@
+@import "tailwindcss";
+
+@keyframes fadeBlue {
+  0%,
+  100% {
+    color: #2563eb; /* blue-600 */
+  }
+  50% {
+    color: #60a5fa; /* blue-400 */
+  }
+}
+
+.fade-blue {
+  animation: fadeBlue 2s ease-in-out infinite;
+  font-family: "Patrick Hand", cursive;
+}
+
+/* For screens below 900px */
+@media (max-width: 900px) {
+  .home-content {
+    flex-direction: column !important;
+    align-items: center !important;
+    text-align: center !important;
+    padding: 20px !important;
+    /* background-color: red; */
+  }
+
+  .home-text-content {
+    width: 100% !important;
+    max-width: 100% !important;
+    padding: 0 60px !important;
+    order: 1 !important;
+    /* background-color: aqua; */
+  }
+
+  .name-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .fade-blue {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .home-typing-text {
+    text-align: center;
+  }
+
+  .home-image-content {
+    order: 2 !important;
+    margin-top: 40px !important;
+    padding: 0 20px !important;
+  }
+
+  .home-buttons {
+    justify-content: center !important;
+  }
+
+  .home-social-icons {
+    justify-content: center !important;
+  }
+}
+
+@media (max-width: 750px) {
+  .name-container {
+    font-size: 50px;
+  }
+
+  .home-typing-text {
+    font-size: 25px;
+  }
+
+  .home-paragraph {
+    font-size: 16px;
+  }
+
+  .home-buttons {
+    font-size: 12px;
+  }
+
+  .home-social-icons {
+    font-size: 18px;
+  }
+
+  .home-image-content {
+    /* font-size: 0px; */
+    height: 320px;
+    width: 320px;
+  }
+}
+
+@media (max-width: 550px) {
+  .name-container {
+    font-size: 30px;
+  }
+
+  .home-typing-text {
+    font-size: 18px;
+  }
+
+  .home-paragraph {
+    font-size: 14px;
+  }
+
+  .home-buttons {
+    font-size: 10px;
+  }
+
+  .button-first {
+    padding: 9px 12px;
+  }
+
+  .button-second {
+    padding: 9px 12px;
+  }
+}
+
+@media (max-width: 400px){
+  
+}
