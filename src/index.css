@@ -118,6 +118,649 @@
   }
 }
 
-@media (max-width: 400px){
-  
+/* About.jsx Media Queries */
+
+/* For screens below 1030px (Mobile Layout) */
+@media (max-width: 1030px) {
+  .about-content {
+    margin-left: 0 !important;
+  }
+}
+
+/* For screens below 900px */
+@media (max-width: 900px) {
+  .about-main-section {
+    flex-direction: column !important;
+    gap: 40px !important;
+  }
+
+  .about-left-column,
+  .about-skills-section {
+    width: 100% !important;
+    padding: 0 20px !important;
+  }
+
+  .about-skills-section {
+    padding-top: 0 !important;
+    padding-bottom: 40px !important;
+  }
+
+  .about-info-cards {
+    grid-template-columns: repeat(2, 1fr) !important;
+    gap: 15px !important;
+  }
+
+  .about-info-card {
+    padding: 15px 10px !important;
+  }
+
+  .about-action-buttons {
+    flex-direction: column !important;
+    gap: 15px !important;
+    align-items: center !important;
+  }
+
+  .about-download-btn,
+  .about-hire-btn {
+    width: 100% !important;
+    max-width: 300px !important;
+    justify-content: center !important;
+  }
+
+  .about-education-section,
+  .about-experience-section {
+    padding: 30px 20px !important;
+    margin-top: 40px !important;
+  }
+
+  .about-education-timeline,
+  .about-experience-timeline {
+    padding-left: 20px !important;
+  }
+
+  .about-education-item,
+  .about-experience-item {
+    grid-template-columns: 1fr !important;
+    gap: 15px !important;
+  }
+
+  .about-education-icon,
+  .about-experience-icon {
+    margin-left: -24px !important; /* Align with timeline */
+    z-index: 1 !important;
+  }
+
+  .about-education-content,
+  .about-experience-content {
+    margin-left: 0 !important;
+  }
+}
+
+/* For screens below 750px */
+@media (max-width: 750px) {
+  .about-title {
+    font-size: 42px !important;
+    text-align: center !important;
+  }
+
+  .about-subtitle {
+    font-size: 18px !important;
+    text-align: center !important;
+  }
+
+  .about-intro-text {
+    font-size: 28px !important;
+    text-align: center !important;
+  }
+
+  .about-intro-paragraph {
+    font-size: 16px !important;
+    text-align: center !important;
+    line-height: 1.6 !important;
+  }
+
+  .about-info-cards {
+    grid-template-columns: 1fr !important;
+    max-width: 400px !important;
+    margin: 0 auto !important;
+  }
+
+  .about-info-card {
+    justify-content: flex-start !important;
+  }
+
+  .about-skills-title,
+  .about-education-title,
+  .about-experience-title {
+    font-size: 24px !important;
+    text-align: center !important;
+  }
+
+  .about-skill-item {
+    margin-bottom: 20px !important;
+  }
+
+  .about-skill-name {
+    font-size: 14px !important;
+  }
+
+  .about-education-degree,
+  .about-experience-job-title {
+    font-size: 20px !important;
+  }
+
+  .about-education-description,
+  .about-experience-description {
+    font-size: 14px !important;
+    line-height: 1.6 !important;
+  }
+
+  .about-card-label {
+    font-size: 14px !important;
+  }
+
+  .about-card-value {
+    font-size: 16px !important;
+  }
+}
+
+/* For screens below 550px */
+@media (max-width: 550px) {
+  .about-title {
+    font-size: 36px !important;
+  }
+
+  .about-subtitle {
+    font-size: 16px !important;
+  }
+
+  .about-intro-text {
+    font-size: 24px !important;
+  }
+
+  .about-intro-paragraph {
+    font-size: 14px !important;
+  }
+
+  .about-info-card {
+    padding: 12px 8px !important;
+  }
+
+  .about-card-icon {
+    width: 36px !important;
+    height: 36px !important;
+  }
+
+  .about-skills-card {
+    padding: 20px 15px !important;
+  }
+
+  .about-skills-title {
+    font-size: 20px !important;
+  }
+
+  .about-skill-name {
+    font-size: 13px !important;
+  }
+
+  .about-skill-percent {
+    font-size: 13px !important;
+  }
+
+  .about-skill-bar-bg {
+    height: 6px !important;
+  }
+
+  .about-skill-bar-fill {
+    height: 6px !important;
+  }
+
+  .about-education-title,
+  .about-experience-title {
+    font-size: 22px !important;
+  }
+
+  .about-education-degree,
+  .about-experience-job-title {
+    font-size: 18px !important;
+  }
+
+  .about-education-description,
+  .about-experience-description {
+    font-size: 13px !important;
+  }
+
+  .about-download-btn,
+  .about-hire-btn {
+    padding: 12px 20px !important;
+    font-size: 14px !important;
+  }
+
+  .about-education-icon,
+  .about-experience-icon {
+    width: 40px !important;
+    height: 40px !important;
+    margin-left: -20px !important;
+  }
+}
+
+/* For screens below 400px */
+@media (max-width: 400px) {
+  .about-title {
+    font-size: 32px !important;
+  }
+
+  .about-intro-text {
+    font-size: 22px !important;
+  }
+
+  .about-card-value {
+    font-size: 15px !important;
+  }
+
+  .about-skills-card {
+    padding: 15px 12px !important;
+  }
+
+  .about-education-content,
+  .about-experience-content {
+    padding: 15px 12px !important;
+  }
+
+  .about-education-date,
+  .about-experience-date {
+    font-size: 14px !important;
+  }
+
+  .about-download-btn,
+  .about-hire-btn {
+    padding: 10px 16px !important;
+    font-size: 13px !important;
+  }
+
+  .about-education-icon,
+  .about-experience-icon {
+    width: 36px !important;
+    height: 36px !important;
+    margin-left: -18px !important;
+  }
+}
+
+/* For screens below 350px */
+@media (max-width: 350px) {
+  .about-title {
+    font-size: 28px !important;
+  }
+
+  .about-intro-text {
+    font-size: 20px !important;
+  }
+
+  .about-info-card {
+    flex-direction: column !important;
+    text-align: center !important;
+    gap: 10px !important;
+  }
+
+  .about-card-icon {
+    margin: 0 auto !important;
+  }
+
+  .about-education-degree,
+  .about-experience-job-title {
+    font-size: 16px !important;
+  }
+
+  .about-education-description,
+  .about-experience-description {
+    font-size: 12px !important;
+  }
+
+  .about-download-btn,
+  .about-hire-btn {
+    padding: 8px 14px !important;
+    font-size: 12px !important;
+  }
+}
+
+/* Project.jsx Media Queries */
+
+/* For screens below 1030px (Mobile Layout) */
+@media (max-width: 1030px) {
+  .project-content {
+    margin-left: 0 !important;
+  }
+}
+
+/* For screens below 900px */
+@media (max-width: 900px) {
+  .project-header {
+    padding: 30px 20px !important;
+  }
+
+  .project-title {
+    font-size: 42px !important;
+    text-align: center !important;
+  }
+
+  .project-subtitle {
+    font-size: 16px !important;
+    text-align: center !important;
+    padding: 0 10px !important;
+  }
+
+  .project-filters-container {
+    margin-bottom: 40px !important;
+    padding: 0 10px !important;
+  }
+
+  .project-filters {
+    flex-wrap: wrap !important;
+    justify-content: center !important;
+    gap: 5px !important;
+    padding: 10px !important;
+  }
+
+  .project-filter-btn {
+    padding: 8px 16px !important;
+    font-size: 12px !important;
+    margin: 2px !important;
+  }
+
+  .project-grid {
+    grid-template-columns: 1fr !important;
+    gap: 25px !important;
+    padding: 0 10px !important;
+  }
+
+  .project-card {
+    max-width: 500px !important;
+    margin: 0 auto !important;
+  }
+
+  .project-action-buttons {
+    flex-direction: column !important;
+    gap: 10px !important;
+  }
+
+  .project-github-btn,
+  .project-live-btn,
+  .project-private-btn {
+    width: 100% !important;
+  }
+
+  .project-skeleton-grid {
+    grid-template-columns: 1fr !important;
+    gap: 25px !important;
+  }
+
+  .project-skeleton-card {
+    max-width: 500px !important;
+    margin: 0 auto !important;
+  }
+
+  .project-tech-tags {
+    justify-content: center !important;
+  }
+}
+
+/* For screens below 750px */
+@media (max-width: 750px) {
+  .project-title {
+    font-size: 36px !important;
+  }
+
+  .project-subtitle {
+    font-size: 15px !important;
+    line-height: 1.5 !important;
+  }
+
+  .project-card-image-container {
+    height: 180px !important;
+  }
+
+  .project-card-content {
+    padding: 20px !important;
+  }
+
+  .project-card-title {
+    font-size: 18px !important;
+  }
+
+  .project-card-description {
+    font-size: 14px !important;
+    line-height: 1.6 !important;
+  }
+
+  .project-tech-tag {
+    font-size: 11px !important;
+    padding: 6px 10px !important;
+  }
+
+  .project-github-btn,
+  .project-live-btn,
+  .project-private-btn {
+    padding: 10px 12px !important;
+    font-size: 13px !important;
+  }
+
+  .project-year-badge {
+    font-size: 11px !important;
+    padding: 4px 8px !important;
+  }
+
+  .project-featured-badge span {
+    font-size: 10px !important;
+    padding: 6px 10px !important;
+  }
+}
+
+/* For screens below 550px */
+@media (max-width: 550px) {
+  .project-title {
+    font-size: 32px !important;
+  }
+
+  .project-subtitle {
+    font-size: 14px !important;
+  }
+
+  .project-filters {
+    flex-direction: column !important;
+    align-items: center !important;
+    background: none !important;
+    gap: 8px !important;
+  }
+
+  .project-filter-btn {
+    width: 200px !important;
+    border-radius: 8px !important;
+    background: white !important;
+    border: 1px solid #e5e7eb !important;
+  }
+
+  .project-card {
+    border-radius: 16px !important;
+  }
+
+  .project-card-image-container {
+    height: 160px !important;
+  }
+
+  .project-card-header {
+    flex-direction: column !important;
+    align-items: flex-start !important;
+    gap: 10px !important;
+    margin-bottom: 15px !important;
+  }
+
+  .project-card-title {
+    font-size: 17px !important;
+    width: 100% !important;
+  }
+
+  .project-year-badge {
+    align-self: flex-start !important;
+  }
+
+  .project-card-description {
+    font-size: 13px !important;
+    margin-bottom: 15px !important;
+  }
+
+  .project-tech-stack {
+    margin-bottom: 15px !important;
+  }
+
+  .project-tech-tags {
+    gap: 6px !important;
+  }
+
+  .project-tech-tag {
+    font-size: 10px !important;
+    padding: 4px 8px !important;
+  }
+
+  .project-action-buttons {
+    gap: 8px !important;
+  }
+
+  .project-github-btn svg,
+  .project-live-btn svg,
+  .project-private-btn svg {
+    height: 12px !important;
+    width: 12px !important;
+  }
+
+  .project-load-more-btn {
+    padding: 10px 20px !important;
+    font-size: 14px !important;
+  }
+}
+
+/* For screens below 400px */
+@media (max-width: 400px) {
+  .project-title {
+    font-size: 28px !important;
+  }
+
+  .project-subtitle {
+    font-size: 13px !important;
+  }
+
+  .project-filter-btn {
+    width: 180px !important;
+    padding: 10px !important;
+    font-size: 13px !important;
+  }
+
+  .project-card {
+    max-width: 100% !important;
+  }
+
+  .project-card-image-container {
+    height: 140px !important;
+  }
+
+  .project-card-content {
+    padding: 16px !important;
+  }
+
+  .project-card-title {
+    font-size: 16px !important;
+  }
+
+  .project-card-description {
+    font-size: 12px !important;
+  }
+
+  .project-tech-tag {
+    font-size: 9px !important;
+    padding: 3px 6px !important;
+  }
+
+  .project-github-btn,
+  .project-live-btn,
+  .project-private-btn {
+    padding: 8px 10px !important;
+    font-size: 12px !important;
+  }
+
+  .project-featured-badge span {
+    padding: 4px 8px !important;
+    font-size: 9px !important;
+  }
+
+  .project-year-badge {
+    font-size: 10px !important;
+    padding: 3px 6px !important;
+  }
+
+  .project-load-more-btn {
+    padding: 8px 16px !important;
+    font-size: 13px !important;
+  }
+}
+
+/* For screens below 350px */
+@media (max-width: 350px) {
+  .project-title {
+    font-size: 24px !important;
+  }
+
+  .project-subtitle {
+    font-size: 12px !important;
+  }
+
+  .project-filter-btn {
+    width: 160px !important;
+    padding: 8px !important;
+    font-size: 12px !important;
+  }
+
+  .project-card-image-container {
+    height: 120px !important;
+  }
+
+  .project-card-title {
+    font-size: 15px !important;
+  }
+
+  .project-card-description {
+    font-size: 11px !important;
+  }
+
+  .project-tech-tags {
+    justify-content: flex-start !important;
+  }
+
+  .project-github-btn,
+  .project-live-btn,
+  .project-private-btn {
+    font-size: 11px !important;
+  }
+
+  .project-load-more-btn {
+    padding: 6px 14px !important;
+    font-size: 12px !important;
+  }
+}
+
+/* Project Grid specific responsiveness */
+@media (min-width: 901px) and (max-width: 1200px) {
+  .project-grid {
+    grid-template-columns: 1fr 1fr !important;
+    gap: 20px !important;
+  }
+
+  .project-card {
+    max-width: 100% !important;
+  }
+}
+
+@media (min-width: 1201px) {
+  .project-grid {
+    grid-template-columns: 1fr 1fr !important;
+    gap: 30px !important;
+  }
 }

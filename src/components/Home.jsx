@@ -47,7 +47,7 @@ const Home = () => {
   return (
     <>
       <div className="flex h-screen bg-[#f6f6f6] relative">
-        {/* Mobile Navbar - Fixed at top */}
+        {/* Mobile Navbar */}
         {isMobile && (
           <div className="fixed top-0 left-0 right-0 h-16 bg-white z-50 flex items-center justify-between px-4">
             <div className="w-44 h-16 flex justify-center items-center relative group">
@@ -189,7 +189,7 @@ const Home = () => {
                   <img
                     src="images/krishna.jpg"
                     alt="Krishna Singha"
-                    className="w-full h-auto object-cover transition-transform duration-700 group-hover:scale-105"
+                    className="w-full h-100 object-cover transition-transform duration-700 group-hover:scale-105"
                     onLoad={handleImageLoad}
                     loading="lazy"
                   />
